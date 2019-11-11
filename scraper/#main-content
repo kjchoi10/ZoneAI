@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5760a34c9c",applicationID:"169342041"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119812007-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-119812007-1", {"groups":"default","anonymize_ip":true,"allow_ad_personalization_signals":false});</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/custom/neoclassic/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://zr.planning.nyc.gov/node/54" />
+<link rel="shortlink" href="https://zr.planning.nyc.gov/node/54" />
+<link rel="revision" href="https://zr.planning.nyc.gov/node/54" />
+
+        <title>Homepage | Zoning Resolution</title>
+        <link rel="stylesheet" media="all" href="/sites/default/files/css/css_lDWoxa0JVbn7t7ZRFudB6NSVGTO_oDuGXMEnDTYCHCY.css?q0o236" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_oNLuaprYMPMollT2T5HJva3A3dIhS3QOzNmF7A5JMXI.css?q0o236" />
+
+            
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+                </head>
+<body class="path-frontpage page-node-type-page preload">
+    <div id="main-container">
+                <a href="#main-content" class="visually-hidden focusable skip-link">
+            Skip to main content
+        </a>
+        
+          <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page-container">
+    <header role="banner" id="header">
+        
+    <div class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <div id="block-neoclassic-branding" class="block block-system block-system-branding-block">
+  
+    
+        <a href="/" title="Home" rel="home" class="site-logo">
+      <img src="/themes/custom/neoclassic/logo.png" alt="Home" />
+    </a>
+        <div class="site-name">
+      <a href="/" title="Home" rel="home">Zoning Resolution</a>
+    </div>
+    </div>
+<nav role="navigation" aria-labelledby="block-neoclassic-main-menu-menu" id="block-neoclassic-main-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-neoclassic-main-menu-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/" data-drupal-link-system-path="&lt;front&gt;" class="is-active">Home</a>
+              </li>
+                <li class="menu-item">
+        <a href="/search" data-drupal-link-system-path="search">Search</a>
+              </li>
+                <li class="menu-item">
+        <a href="/preamble" data-drupal-link-system-path="node/79">Preamble</a>
+              </li>
+                <li class="menu-item">
+        <a href="/zr-downloads" data-drupal-link-system-path="zr-downloads">Archive</a>
+              </li>
+                <li class="menu-item">
+        <a href="/subscribe" data-drupal-link-system-path="node/133">Subscribe</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-textresize" class="block block-text-resize block-text-resize-block">
+  
+    
+      <div class="content"><a href="javascript:;" class="changer" id="text_resize_decrease"><sup>-</sup>A</a> <a href="javascript:;" class="changer" id="text_resize_reset">A</a> <a href="javascript:;" class="changer" id="text_resize_increase"><sup>+</sup>A</a><div id="text_resize_clear"></div></div>
+
+
+  </div>
+
+    </div>
+
+        <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+    </header>
+
+    <div class="layout-container container-fluid">
+        <div class="row flex-xl-nowrap">
+            <aside class="layout-sidebar-first" role="complementary">
+                <div class="sidebar-first-container">
+                    <a class="toc-toggle collapse" href="#">Table of Contents</a>
+                      <div class="region region-left-sidebar">
+    <div class="views-exposed-form block block-views block-views-exposed-filter-blockonline-zr-search-page-1" data-drupal-selector="views-exposed-form-online-zr-search-page-1" id="block-exposedformonline-zr-searchpage-1-2">
+  
+    
+      <form action="/search" method="get" id="views-exposed-form-online-zr-search-page-1" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-search-term form-item-search-term">
+      <label for="edit-search-term">Search</label>
+        <input aria-label="Search Keywords" data-drupal-selector="edit-search-term" type="text" id="edit-search-term" name="search_term" value="" size="30" maxlength="128" placeholder="Search keywords" class="form-text" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit-online-zr-search" type="submit" id="edit-submit-online-zr-search" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</div>
+
+</form>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockarticles-block-1" id="block-views-block-articles-block-1">
+  
+    
+      <div><div class="view view-articles view-id-articles view-display-id-block_1 js-view-dom-id-609887bd1257fb0b63acec4c889539af51e09f86e4d4baa8b1d18ef881f440ed">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+<article data-history-node-id="32" role="article" about="/article-i" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-i">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article I</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">General Provisions</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="39" role="article" about="/article-ii" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-ii">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article II</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Residence District Regulations</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="40" role="article" about="/article-iii" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-iii">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article III</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Commercial District Regulations</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="41" role="article" about="/article-iv" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-iv">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article IV</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Manufacturing District Regulations</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="42" role="article" about="/article-v" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-v">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article V</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Non-Conforming Uses and Non-Complying Buildings</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="62" role="article" about="/article-vi" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-vi">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article VI</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Special Regulations Applicable to Certain Areas</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="139" role="article" about="/article-vii" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-vii">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article VII</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Administration</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="140" role="article" about="/article-viii" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-viii">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article VIII</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Special Purpose Districts</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="141" role="article" about="/article-ix" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-ix">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article IX</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Special Purpose Districts</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="142" role="article" about="/article-x" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-x">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article X</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Special Purpose Districts</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="143" role="article" about="/article-xi" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-xi">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article XI</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Special Purpose Districts</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="144" role="article" about="/article-xii" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-xii">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article XII</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Special Purpose Districts</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="145" role="article" about="/article-xiii" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-xiii">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article XIII</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Special Purpose Districts</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="146" role="article" about="/article-xiv" class="node node--type-article node--view-mode-leftnav">
+
+    <a href="/article-xiv">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">Article XIV</span>
+</div>
+        <div class="article-title">
+            <div class="field field--name-field-article-title field--type-string field--label-hidden field__item">Special Purpose Districts</div>
+      </div>
+    </a>
+
+        <div class="border-divider"></div>
+</article>
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockappendices-block-1" id="block-views-block-appendices-block-1">
+  
+    
+      <div><div class="view view-appendices view-id-appendices view-display-id-block_1 js-view-dom-id-d518d66c2406273002d7ae1f75299205842a639ae3fd5b93df1c5eab5becad81">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+<article data-history-node-id="21234" role="article" about="/appendix-index-uses" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-index-uses">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX A — Index of Uses</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21239" role="article" about="/appendix-b-index-special-purpose-districts" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-b-index-special-purpose-districts">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX B — Index of Special Purpose Districts</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21242" role="article" about="/appendix-c-table-1-city-environmental-quality-review-ceqr-environmental-requirements-e-designations" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-c-table-1-city-environmental-quality-review-ceqr-environmental-requirements-e-designations">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX C, Table 1 — City Environmental Quality Review (CEQR) Environmental Requirements: (E) Designations</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21243" role="article" about="/appendix-c-table-2-city-environmental-quality-review-ceqr-environmental-requirements-environmental" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-c-table-2-city-environmental-quality-review-ceqr-environmental-requirements-environmental">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX C, Table 2 — City Environmental Quality Review (CEQR) Environmental Requirements: Environmental Restrictive Declarations</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21241" role="article" about="/appendix-d-zoning-map-amendment-d-restrictive-declarations" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-d-zoning-map-amendment-d-restrictive-declarations">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX D — Zoning Map Amendment (&quot;D&quot;) Restrictive Declarations</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21240" role="article" about="/appendix-e-design-requirements-plazas-residential-plazas-and-urban-plazas-developed-prior-october" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-e-design-requirements-plazas-residential-plazas-and-urban-plazas-developed-prior-october">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX E — Design Requirements for Plazas, Residential Plazas and Urban Plazas Developed Prior to October 17, 2007</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21252" role="article" about="/appendix-f-inclusionary-housing-designated-areas-and-mandatory-inclusionary-housing-areas" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-f-inclusionary-housing-designated-areas-and-mandatory-inclusionary-housing-areas">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX F — Inclusionary Housing Designated Areas and Mandatory Inclusionary Housing Areas</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21235" role="article" about="/appendix-g-radioactive-materials" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-g-radioactive-materials">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX G — Radioactive Materials</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21233" role="article" about="/appendix-h-arterial-highways" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-h-arterial-highways">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX H — Arterial Highways</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21238" role="article" about="/appendix-i-transit-zone" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-i-transit-zone">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX I — Transit Zone</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+    <div class="views-row">
+<article data-history-node-id="21237" role="article" about="/appendix-j-designated-areas-within-manufacturing-districts" class="node node--type-appendix node--view-mode-leftnav">
+
+    <a href="/appendix-j-designated-areas-within-manufacturing-districts">
+        <div class="article-number"><span class="field field--name-title field--type-string field--label-hidden">APPENDIX J — Designated Areas Within Manufacturing Districts</span>
+</div>
+    </a>
+
+    <div class="border-divider"></div>
+</article>
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+
+  </div>
+
+                </div>
+            </aside>
+
+            <main role="main" class="main-content" id="content-main">
+                <a class="toc-toggle expand" href="#">ToC</a>
+                  <div class="region region-content">
+    <nav role="navigation" aria-labelledby="block-externallinks-menu" id="block-externallinks" class="block block-menu navigation menu--external-links">
+            
+  <h2 class="visually-hidden" id="block-externallinks-menu">External Links</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="http://www1.nyc.gov/site/planning/zoning/index-map.page">Zoning Maps</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-neoclassic-content" class="block block-system block-system-main-block">
+  
+    
+      <article data-history-node-id="54" role="article" about="/node/54" typeof="schema:WebPage" class="page full clearfix">
+    
+      <span property="schema:name" content="Homepage" class="rdf-meta hidden"></span>
+
+
+    
+    <div class="content">
+        
+    </div>
+
+</article>
+
+  </div>
+<div id="block-crestheader" class="block block-block-content block-block-content3a556f07-0fa2-4f75-9abc-7b03ce7daa2b">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="crest-header">
+<div class="ch-crest"> </div>
+
+<div class="ch-title">
+<h2>Zoning Resolution</h2>
+
+<div class="ch-figs">
+<div class="ch-fig">
+<div class="fig-title">The City of New York</div>
+
+<div class="fig-name">Bill de Blasio, Mayor</div>
+</div>
+
+<div class="ch-fig">
+<div class="fig-title">City Planning Commission</div>
+
+<div class="fig-name">Marisa Lago, Chair</div>
+</div>
+</div>
+</div>
+</div>
+
+<p>The Zoning Resolution consists of 14 Articles and 10 Appendices, plus 126 Zoning Maps, that establish the zoning districts for the City and the regulations governing land use and development. Articles I through VII contain the use, bulk, parking and other applicable regulations for each zoning district. The three major articles are Article II, with regulations for residence districts, Article III for commercial districts, and Article IV for manufacturing districts. Articles VIII through XIV set forth the purpose and regulations for each Special Purpose District.</p>
+
+<p>Users of this New Online ZR can use the <a href="/feedback">feedback</a> link at the foot of this home page to provide comments, questions or corrections.</p>
+</div>
+      
+  </div>
+<div class="views-element-container block block-views block-views-blocklatest-approved-date-block-1" id="block-views-block-latest-approved-date-block-1">
+  
+    
+      <div><div class="view view-latest-approved-date view-id-latest_approved_date view-display-id-block_1 js-view-dom-id-6945a8183789f5e5d408901c581a30ec875b46b285c5a7852c2a1ad5b814bdd2">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-field-date"><div class="field-content"><div class="flex-container flex-center">
+<div>All text changes approved by the city council as of <span class='date'>Oct 17, 2019</span></div>
+<div class="align-right flex-grow"><a class="btn btn-secondary" href="/sites/default/files/article/Zoning Resolution Complete.pdf" target="_blank">Download Full <strong>PDF</strong></a></div>
+</div></div></div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockrecently-adopted-block-1" id="block-views-block-recently-adopted-block-1">
+  
+    
+      <div><div class="view view-recently-adopted view-id-recently_adopted view-display-id-block_1 js-view-dom-id-73be2b449e7d9ba3dd99185585d7ab7297826e03d796dbdc437ba5dc3a8b081d">
+  
+    
+      <div class="view-header">
+      <h2>Recently Adopted</h2>
+<a class="view-all" href="/recently-adopted">View All</a>
+    </div>
+      
+      <div class="view-content">
+        <h3><time datetime="2019-10-17T12:00:00Z" class="datetime">10/17/2019</time>
+</h3>
+    <div class="views-row"><div class="views-field views-field-rendered-entity"><span class="field-content"><article data-history-node-id="21318" role="article" about="/recently-adopted/38th-street-and-35th-avenue-n-180037-zrq" class="node node--type-recently-adopted node--view-mode-teaser">
+    
+    
+
+    <div class="ra-container">
+        <span class="title"><a class="title" href="/recently-adopted/38th-street-and-35th-avenue-n-180037-zrq">38th Street and 35th Avenue (N 180037 ZRQ)</a></span>
+        <span class="details"><a href="/recently-adopted/38th-street-and-35th-avenue-n-180037-zrq">Details</a></span>
+    </div>
+
+</article>
+
+
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-rendered-entity"><span class="field-content"><article data-history-node-id="21319" role="article" about="/recently-adopted/vernon-boulevard-n-190151-zrq" class="node node--type-recently-adopted node--view-mode-teaser">
+    
+    
+
+    <div class="ra-container">
+        <span class="title"><a class="title" href="/recently-adopted/vernon-boulevard-n-190151-zrq">Vernon Boulevard (N 190151 ZRQ)</a></span>
+        <span class="details"><a href="/recently-adopted/vernon-boulevard-n-190151-zrq">Details</a></span>
+    </div>
+
+</article>
+
+
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-rendered-entity"><span class="field-content"><article data-history-node-id="21320" role="article" about="/recently-adopted/terence-cardinal-cooke-n-190156-zrm" class="node node--type-recently-adopted node--view-mode-teaser">
+    
+    
+
+    <div class="ra-container">
+        <span class="title"><a class="title" href="/recently-adopted/terence-cardinal-cooke-n-190156-zrm">Terence Cardinal Cooke (N 190156 ZRM)</a></span>
+        <span class="details"><a href="/recently-adopted/terence-cardinal-cooke-n-190156-zrm">Details</a></span>
+    </div>
+
+</article>
+
+
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-rendered-entity"><span class="field-content"><article data-history-node-id="21321" role="article" about="/recently-adopted/borough-based-jail-system-n-190334-zry" class="node node--type-recently-adopted node--view-mode-teaser">
+    
+    
+
+    <div class="ra-container">
+        <span class="title"><a class="title" href="/recently-adopted/borough-based-jail-system-n-190334-zry">Borough-based Jail System (N 190334 ZRY)</a></span>
+        <span class="details"><a href="/recently-adopted/borough-based-jail-system-n-190334-zry">Details</a></span>
+    </div>
+
+</article>
+
+
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-rendered-entity"><span class="field-content"><article data-history-node-id="21322" role="article" about="/recently-adopted/lefrak-city-parking-garage-n-190440-zrq" class="node node--type-recently-adopted node--view-mode-teaser">
+    
+    
+
+    <div class="ra-container">
+        <span class="title"><a class="title" href="/recently-adopted/lefrak-city-parking-garage-n-190440-zrq">LeFrak City Parking Garage (N 190440 ZRQ)</a></span>
+        <span class="details"><a href="/recently-adopted/lefrak-city-parking-garage-n-190440-zrq">Details</a></span>
+    </div>
+
+</article>
+
+
+</span></div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+
+  </div>
+
+
+                <section class="main-content-columns">
+                    <div class="main-content-column column-first">  <div class="region region-content-first">
+    <div id="block-curatedlinks" class="block block-block-content block-block-content4a76e955-b8bf-4b95-9847-a66b85566b8e">
+  
+      <h2>Quick Links</h2>
+    
+      
+      <div class="field field--name-field-sections field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">
+<article data-history-node-id="18520" role="article" about="/article-i/chapter-2/12-00" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-i/chapter-2#12-00" title="RULES FOR CONSTRUCTION OF LANGUAGE">
+        <div><span class="section-number">12-00</span></div>
+        <div class="section-title">RULES FOR CONSTRUCTION OF LANGUAGE</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="18523" role="article" about="/article-i/chapter-2/12-10" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-i/chapter-2#12-10" title="DEFINITIONS">
+        <div><span class="section-number">12-10</span></div>
+        <div class="section-title">DEFINITIONS</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="18174" role="article" about="/article-ii/chapter-2/22-42" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-ii/chapter-2#22-42" title="Detached and Semi-Detached Two-Family Residences">
+        <div><span class="section-number">22-42</span></div>
+        <div class="section-title">Detached and Semi-Detached Two-Family Residences</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="18018" role="article" about="/article-ii/chapter-3/23-154" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-ii/chapter-3#23-154" title="Inclusionary Housing">
+        <div><span class="section-number">23-154</span></div>
+        <div class="section-title">Inclusionary Housing</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="18026" role="article" about="/article-ii/chapter-3/23-22" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-ii/chapter-3#23-22" title="Maximum Number of Dwelling Units">
+        <div><span class="section-number">23-22</span></div>
+        <div class="section-title">Maximum Number of Dwelling Units</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="17276" role="article" about="/article-iv/chapter-2/42-111" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-iv/chapter-2#42-111" title="Special provisions for hotels in M1 Districts">
+        <div><span class="section-number">42-111</span></div>
+        <div class="section-title">Special provisions for hotels in M1 Districts</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="18618" role="article" about="/article-v/chapter-4/54-40" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-v/chapter-4#54-40" title="DAMAGE OR DESTRUCTION IN NON-COMPLYING BUILDINGS">
+        <div><span class="section-number">54-40</span></div>
+        <div class="section-title">DAMAGE OR DESTRUCTION IN NON-COMPLYING BUILDINGS</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="19177" role="article" about="/article-vii/chapter-4/74-803" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-vii/chapter-4#74-803" title="Transient hotels within M1 Districts">
+        <div><span class="section-number">74-803</span></div>
+        <div class="section-title">Transient hotels within M1 Districts</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="19144" role="article" about="/article-vii/chapter-4/74-711" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-vii/chapter-4#74-711" title="Landmark preservation in all districts">
+        <div><span class="section-number">74-711</span></div>
+        <div class="section-title">Landmark preservation in all districts</div>
+    </a>
+</article>
+</div>
+              <div class="field__item">
+<article data-history-node-id="21325" role="article" about="/article-vii/chapter-4/74-831" class="node node--type-section node--view-mode-section-title">
+    <a class="section-link" href="/article-vii/chapter-4#74-831" title="Court houses">
+        <div><span class="section-number">74-831</span></div>
+        <div class="section-title">Court houses</div>
+    </a>
+</article>
+</div>
+          </div>
+  
+  </div>
+
+  </div>
+</div>
+                </section>
+
+                <div id="main-footer">
+                    <div class="copyright">  <div class="region region-footer-copyright">
+    <div id="block-footercopyright-2" class="block block-block-content block-block-contente1f13e41-5981-4e24-91df-18d7fe9684c9">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><img src="/themes/custom/neoclassic/img/logo-footer.png" /> © Copyright 2019. City of New York.</p>
+</div>
+      
+  </div>
+
+  </div>
+</div>
+                    <div class="footer-menu">
+                         <div class="region region-footer-links">
+    <nav role="navigation" aria-labelledby="block-footerlinks-2-menu" id="block-footerlinks-2" class="block block-menu navigation menu--footer-links">
+            
+  <h2 class="visually-hidden" id="block-footerlinks-2-menu">Footer Links</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/disclaimer" data-drupal-link-system-path="node/8771">Disclaimer</a>
+              </li>
+                <li class="menu-item">
+        <a href="/feedback" data-drupal-link-system-path="node/8790">Feedback</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden">
+      <div class="region region-mobile-menu">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/" data-drupal-link-system-path="&lt;front&gt;" class="is-active">Home</a>
+              </li>
+                <li class="menu-item">
+        <a href="/search" data-drupal-link-system-path="search">Search</a>
+              </li>
+                <li class="menu-item">
+        <a href="/preamble" data-drupal-link-system-path="node/79">Preamble</a>
+              </li>
+                <li class="menu-item">
+        <a href="/zr-downloads" data-drupal-link-system-path="zr-downloads">Archive</a>
+              </li>
+                <li class="menu-item">
+        <a href="/subscribe" data-drupal-link-system-path="node/133">Subscribe</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+</div>
+
+<div class="back-to-top">
+    <a href="#">Top</a>
+</div>
+
+<!-- Modal  -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-section">23-12</h5>
+                <h5 class="modal-title">Permitted Obstructions in Open Space</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+
+        
+    </div>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/54","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","text_resize":{"text_resize_scope":"content-main","text_resize_minimum":"14","text_resize_maximum":"22","text_resize_line_height_allow":1,"text_resize_line_height_min":"18","text_resize_line_height_max":"26"},"ajaxPageState":{"libraries":"classy\/base,classy\/messages,core\/html5shiv,core\/normalize,extlink\/drupal.extlink,google_analytics\/google_analytics,neoclassic\/global-css,neoclassic\/global-js,nyczr_amendment_popup\/popup,statistics\/drupal.statistics,system\/base,text_resize\/text_resize.resize,views\/views.module","theme":"neoclassic","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"google_analytics":{"account":"UA-119812007-1","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link sends email)"}},"statistics":{"data":{"nid":"54"},"url":"\/core\/modules\/statistics\/statistics.php"},"user":{"uid":0,"permissionsHash":"b478ef6a54285d1b5b25e9a379ade28060d008ff761ff7b725df28920b52defa"}}</script>
+<script src="/sites/default/files/js/js_iZrQ1F-NTWo-LOYgGGQSiM4P84TQhHUf1mxIRL2bJUk.js"></script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5760a34c9c","applicationID":"169342041","transactionName":"MQAHZkVVWktTAEAPWwhKJFFDXVtWHQVdA1gCOgJAWEFEZ1cNQA9AHzoTW1JDa0hABmsUUQgBAEA=","queueTime":0,"applicationTime":462,"atts":"HUcEEA1PSUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
